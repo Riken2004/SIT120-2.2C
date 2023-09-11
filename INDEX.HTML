@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem: Your Sustainable Living Friend</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">CARBONFOOTPRINT CALCULATOR</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Carbon Calculator</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="Carbon-calculator" id="calculator-app">
+        <h1>Carbon Calculator</h1>
+        <div id="app">
+            <form id="calculator-form">
+                <label for="carbon-footprint">Carbon Footprint (kg CO2):</label>
+                <input v-model="carbon" type="number" id="carbon-footprint" placeholder="Enter your value">
+                
+                <label for="energy-consumption">Energy consumption (kWh):</label>
+                <input v-model="energy" type="number" id="energy-consumption" placeholder="Enter your value">
+                
+                <label for="water-utilities">Water utilities (liters):</label>
+                <input v-model="water" type="number" id="water-utilities" placeholder="Enter your value">
+
+                <button type="button" @click="Submit">Submit</button>
+            </form>
+
+            <div class="result">
+                <p>Estimated Carbon Footprint: <span>{{ totalCarbon.toFixed(2) }} kg CO2</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.11/dist/vue.global.prod.js"></script>
+    <script src="Script.js"></script>
+
+</body>
+</html>

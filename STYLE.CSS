@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00ffee;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section.Carbon-calculator {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff8f8;
+    box-shadow: 50px 50px 50px rgba(7, 7, 7, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d3d0d0;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2d7cd1;
+    color: #fff8f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.result span {
+    color: #007BFF;
+}
